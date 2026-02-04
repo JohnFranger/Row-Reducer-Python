@@ -52,7 +52,7 @@ def get_nonzero_float(prompt):
 
 while(userChoice != 4):
     
-    print
+    print(mat)
     
     userChoice = input("Choose a row Operation \n 1. Switch two rows \n 2. Scale a row \n 3. Add or Subtract a scaled row \n 4. Exit\n")
     
