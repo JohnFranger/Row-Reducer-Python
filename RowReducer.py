@@ -90,7 +90,7 @@ while(userChoice != 4):
     
     print(mat)
     
-    userChoice = input("Choose a row Operation \n 1. Switch two rows \n 2. Scale a row \n 3. Add or Subtract a scaled row \n 4. Exit (View Invserse)\n")
+    userChoice = input("Choose a row Operation \n 1. Switch two rows \n 2. Scale a row \n 3. Add or Subtract a scaled row \n 4. Exit (View Inverse)\n")
     
     match userChoice:
         case "1":
@@ -121,7 +121,7 @@ while(userChoice != 4):
             r2 = get_row("What is the row you'd like to add or subtract from the first row?\n", rows)
             mord = "q"
             while mord not in ("m", "d"):
-                mord = input(f"Would you like to multiply or divide row {r2}? (enter m or d)\n")
+                mord = input(f"Would you like to multiply or divide row {r2+1}? (enter m or d)\n")
             sf = get_nonzero_float("What factor would you like to scale the addition by?\n", mord)
             
             mat[r1] = mat[r1] + sf*mat[r2]
